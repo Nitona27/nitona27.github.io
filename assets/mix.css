@@ -1,0 +1,70 @@
+/* ---------- Mix request page ---------- */
+.hero.short{height:300px}
+.hero.short .chara{width:220px;right:30px}
+.hero.short .kanji{font-size:64px}
+.hero .big{position:absolute;left:16px;top:48px;z-index:2;font-family:"Anton";font-size:58px;line-height:.92;letter-spacing:.01em;text-shadow:0 0 0 var(--ink)}
+.hero .big em{font-style:normal;color:var(--red)}
+.back{position:absolute;left:16px;top:14px;font-size:12px;z-index:3;border-bottom:1px solid var(--paper);padding-bottom:1px}
+
+.block{padding:0 18px}
+.lead{font-size:14px;line-height:1.95;color:#e6e3dd}
+.lead strong{color:var(--paper);font-weight:900}
+.lead .hl{background:linear-gradient(transparent 62%,var(--red) 62%);font-weight:900;color:var(--paper)}
+
+/* price list */
+.menu{border-top:2px solid var(--paper)}
+.row{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.row .nm{font-weight:900;font-size:15px;line-height:1.4}
+.row .nm .st{color:var(--red);margin-right:4px}
+.row .pr{font-family:"Anton";font-size:20px;letter-spacing:.03em;text-align:right;white-space:nowrap}
+.row .pr small{font-family:"Noto Sans JP";font-weight:700;font-size:11px;margin-left:2px}
+.row .ds{grid-column:1/-1;font-size:12px;color:var(--gray);line-height:1.6}
+.row.main{background:var(--red);margin:0 -18px;padding:16px 18px;border-bottom:none}
+.row.main .ds{color:#ffd9dc}
+.row.main .pr{font-size:28px}
+.note{font-size:12px;color:var(--gray);line-height:1.8;margin-top:10px}
+.note b{color:var(--paper)}
+
+/* flow */
+.flow{counter-reset:s;display:grid;gap:0}
+.step{position:relative;display:grid;grid-template-columns:54px 1fr;gap:12px;padding:14px 0}
+.step:not(:last-child)::after{content:"";position:absolute;left:26px;top:58px;bottom:-6px;width:2px;background:repeating-linear-gradient(var(--red) 0 6px,transparent 6px 10px)}
+.step .sn{width:54px;height:44px;display:grid;place-items:center;background:var(--paper);color:var(--ink);font-family:"Anton";font-size:22px}
+.step:first-child .sn{background:var(--red);color:var(--paper)}
+.step h3{font-size:16px;font-weight:900;line-height:1.4}
+.step p{font-size:12px;color:var(--gray);line-height:1.7;margin-top:3px}
+
+/* send */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{border:2px solid var(--paper);padding:14px 12px}
+.card .k{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--red)}
+.card h3{font-size:15px;font-weight:900;margin:4px 0 6px}
+.card p{font-size:12px;color:#d6d3cd;line-height:1.6}
+.inline{color:var(--paper);border-bottom:1px solid var(--red);font-weight:700}
+
+/* checklist */
+.check{list-style:none;display:grid;gap:8px}
+.check li{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:14px;font-weight:700;line-height:1.5}
+.check li::before{content:"";width:18px;height:18px;border:2px solid var(--paper);margin-top:2px}
+.check li small{display:block;font-weight:500;font-size:12px;color:var(--gray)}
+.tree{margin-top:14px;background:var(--paper);color:var(--ink);font-family:"JetBrains Mono",monospace;font-size:12px;line-height:1.75;padding:14px 16px}
+.tree b{display:block;font-family:"Noto Sans JP";font-size:12px;font-weight:900;margin-bottom:4px}
+
+/* studio */
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.photos figure{position:relative}
+.photos img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;filter:contrast(1.05)}
+.photos figcaption{position:absolute;left:0;bottom:0;background:var(--ink);font-family:"Anton";font-size:14px;letter-spacing:.04em;padding:3px 8px}
+
+/* cta */
+.cta{display:grid;gap:10px;padding:0 18px}
+.btn{display:flex;align-items:center;justify-content:space-between;padding:18px 18px;font-weight:900;font-size:18px;border:2px solid var(--paper)}
+.btn small{display:block;font-weight:500;font-size:12px;opacity:.8;margin-top:2px}
+.btn .arr{font-family:"Anton";font-size:26px}
+.btn.red{background:var(--red);border-color:var(--red)}
+.btn:hover{box-shadow:4px 4px 0 var(--paper);transform:translate(-2px,-2px)}
+.rules{counter-reset:r;list-style:none;display:grid;gap:8px}
+.rules li{counter-increment:r;display:grid;grid-template-columns:28px 1fr;font-size:13px;line-height:1.65;color:#e6e3dd}
+.rules li::before{content:counter(r,decimal-leading-zero);font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--red);padding-top:2px}
+.row.main .st{color:var(--paper)}
+.hero .big em{color:var(--paper);background:var(--red);padding:0 6px}
