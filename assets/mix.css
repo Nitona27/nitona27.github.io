@@ -89,3 +89,4 @@
 .row{grid-template-columns:1fr 112px;gap:2px 10px;padding:10px 0;border-bottom:1px solid #2a2a2c}
 .row .ld{display:none}
 .row .pr{text-align:left;white-space:nowrap}
+.row .pr .pl{display:inline-block;width:.7em;margin-left:-.7em;text-align:right;font-weight:900}
