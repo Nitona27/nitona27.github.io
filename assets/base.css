@@ -68,3 +68,8 @@
   footer{display:flex;justify-content:space-between;align-items:flex-end;padding:34px 18px 0}
   .barcode{height:28px;width:120px;background:repeating-linear-gradient(90deg,var(--paper) 0 2px,transparent 2px 4px,var(--paper) 4px 5px,transparent 5px 8px,var(--paper) 8px 11px,transparent 11px 13px)}
   footer .mono{font-size:11px;color:var(--gray);text-align:right;line-height:1.6}
+
+  /* ---------- language switch ---------- */
+  .lang{margin-left:auto;align-self:center;font-size:12px;font-weight:700;color:var(--paper);border-bottom:2px solid var(--red);padding:2px 0}
+  .lang:hover{color:var(--red)}
+  .en-catch{font-family:"Anton",sans-serif;font-weight:400;font-size:21px;letter-spacing:.14em}
