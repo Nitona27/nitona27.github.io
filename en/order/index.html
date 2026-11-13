@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order a Vocal Mix | NITONA27</title>
+<meta name="description" content="Order a vocal mix from NITONA27: check your price, send your file link, agree to the terms and pay by card in one form. First draft in 10–15 days.">
+<meta property="og:title" content="Order a Vocal Mix | NITONA27">
+<meta property="og:description" content="Price, files, terms and payment in one form. First draft in 10–15 days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@500;700;900&family=Shippori+Mincho:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/base.css">
+<link rel="stylesheet" href="../../assets/mix.css">
+<style>
+  .hero .big{line-height:1.08}
+  .calc{border:2px solid var(--paper);padding:16px 14px;display:grid;gap:14px}
+  .q{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px}
+  .q label{font-weight:900;font-size:15px;line-height:1.4}
+  .q small{grid-column:1/-1;font-size:12px;color:var(--gray);line-height:1.6}
+  .stepper{display:flex;align-items:center;border:2px solid var(--paper)}
+  .stepper button{width:36px;height:36px;background:var(--ink2);color:var(--paper);border:0;font-size:20px;font-weight:900;cursor:pointer}
+  .stepper button:active{background:var(--red)}
+  .stepper output{min-width:40px;text-align:center;font-family:"Anton";font-size:20px}
+  .tog{display:flex;align-items:center;gap:10px;cursor:pointer}
+  .tog input{width:22px;height:22px;accent-color:var(--red)}
+  .sum{border-top:2px solid var(--paper);padding-top:12px;font-size:13px;color:#e6e3dd;line-height:1.9}
+  .sum .ln{display:flex;justify-content:space-between}
+  .sum .tot{display:flex;justify-content:space-between;align-items:baseline;margin-top:6px;font-weight:900;font-size:16px}
+  .sum .tot b{font-family:"Anton";font-size:34px;color:var(--red);letter-spacing:.02em}
+  .go{display:flex;justify-content:space-between;align-items:center;width:100%;margin-top:14px;padding:16px;background:var(--red);color:var(--paper);border:0;font-family:inherit;font-weight:900;font-size:17px;cursor:pointer}
+  .go .arr{font-family:"Anton";font-size:22px}
+  #formwrap{display:none;margin-top:6px}
+  #formwrap.on{display:block}
+  #formwrap iframe{background:var(--paper);border:0}
+  .soon{border:2px dashed var(--gray);padding:16px;font-size:13px;line-height:1.8;color:#e6e3dd}
+  .soon a{border-bottom:2px solid var(--red);font-weight:900}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="26"/></filter>
+</svg>
+<div class="wrap">
+
+  <header class="hero short" aria-label="Order a vocal mix">
+    <div class="speed"></div>
+    <div class="dots"></div>
+    <div class="brush" style="top:150px"></div>
+    <div class="kanji" aria-hidden="true">二十七</div>
+    <a class="back" href="../mix/">← Prices &amp; rules</a>
+    <div class="big">ORDER<br><em>A MIX</em></div>
+    <img class="chara" src="../../assets/chara.webp" alt="NITONA27 character">
+    <div class="tape" aria-hidden="true"><span>PRICE → FILES → PAY → FIRST DRAFT IN 10–15 DAYS / PRICE → FILES → PAY → FIRST DRAFT IN 10–15 DAYS / PRICE → FILES → PAY → FIRST DRAFT IN 10–15 DAYS /&nbsp;</span></div>
+    <i class="corner c1"></i><i class="corner c2"></i>
+  </header>
+
+  <div class="sec"><span class="mono">01</span><h2>Have these ready</h2></div>
+  <div class="block">
+    <ul class="check">
+      <li><span>A link to your files<small>Vocal tracks + instrumental, shared from Google Drive, Dropbox or WeTransfer. Keep it working for 100 days</small></span></li>
+      <li><span>Permission to use the instrumental</span></li>
+      <li><span>A credit or debit card<small>Payment is in US dollars, in advance, inside the form</small></span></li>
+    </ul>
+    <p class="note">Not sure about something? Read <a class="inline" href="../mix/">prices &amp; rules</a> or DM me on X <a class="inline" href="https://x.com/Nitona27_EN" target="_blank" rel="noopener">@Nitona27_EN</a>.</p>
+  </div>
+
+  <div class="sec"><span class="mono">02</span><h2>Your price</h2></div>
+  <div class="block">
+    <div class="calc">
+      <div class="q">
+        <label for="singers">Singers</label>
+        <div class="stepper"><button type="button" data-t="singers" data-d="-1" aria-label="Fewer singers">−</button><output id="singers">1</output><button type="button" data-t="singers" data-d="1" aria-label="More singers">+</button></div>
+        <small>2+ singers = collab. Each extra singer is +$14 and includes 2 tracks.</small>
+      </div>
+      <div class="q">
+        <label for="tracks">Vocal tracks in total</label>
+        <div class="stepper"><button type="button" data-t="tracks" data-d="-1" aria-label="Fewer tracks">−</button><output id="tracks">2</output><button type="button" data-t="tracks" data-d="1" aria-label="More tracks">+</button></div>
+        <small>Count every vocal file: main, harmonies, ad-libs, doubles. 2 tracks per singer are included, each extra one is +$8.</small>
+      </div>
+      <label class="tog"><input type="checkbox" id="minus"> <span><b>Minus-one</b> (backing track for live) +$14</span></label>
+      <label class="tog"><input type="checkbox" id="rush"> <span><b>Rush 48h</b> +$34 <small style="color:var(--gray)">· DM me first to check I'm free</small></span></label>
+      <div class="sum" id="sum" aria-live="polite"></div>
+    </div>
+    <button class="go" id="go" type="button"><span>Next: details, files &amp; payment</span><span class="arr">→</span></button>
+  </div>
+
+  <div id="formwrap">
+    <div class="sec"><span class="mono">03</span><h2>Details, files &amp; payment</h2></div>
+    <div class="block" id="formbox"></div>
+  </div>
+
+  <footer>
+    <div class="barcode" aria-hidden="true"></div>
+    <div class="mono">No.027<br>© 2023 NITONA27</div>
+  </footer>
+</div>
+
+<script>
+  /* Tally form id (the part after tally.so/r/). Empty = form not ready yet. */
+  var TALLY_FORM_ID = '';
+
+  var P = {base: 54, singer: 14, track: 8, minus: 14, rush: 34, incl: 2};
+  var st = {singers: 1, tracks: 2};
+  function el(id){ return document.getElementById(id); }
+  function calc(){
+    var extraSingers = st.singers - 1;
+    var extraTracks = Math.max(0, st.tracks - st.singers * P.incl);
+    var minus = el('minus').checked ? 1 : 0, rush = el('rush').checked ? 1 : 0;
+    var total = P.base + extraSingers * P.singer + extraTracks * P.track + minus * P.minus + rush * P.rush;
+    return {extraSingers: extraSingers, extraTracks: extraTracks, minus: minus, rush: rush, total: total};
+  }
+  function render(){
+    if (st.tracks < st.singers) st.tracks = st.singers;
+    el('singers').textContent = st.singers; el('tracks').textContent = st.tracks;
+    var c = calc(), h = '<div class="ln"><span>Vocal mix (instrumental + 2 tracks)</span><span>$' + P.base + '</span></div>';
+    if (c.extraSingers) h += '<div class="ln"><span>Extra singers × ' + c.extraSingers + '</span><span>$' + c.extraSingers * P.singer + '</span></div>';
+    if (c.extraTracks) h += '<div class="ln"><span>Extra tracks × ' + c.extraTracks + '</span><span>$' + c.extraTracks * P.track + '</span></div>';
+    if (c.minus) h += '<div class="ln"><span>Minus-one</span><span>$' + P.minus + '</span></div>';
+    if (c.rush) h += '<div class="ln"><span>Rush 48h</span><span>$' + P.rush + '</span></div>';
+    h += '<div class="tot"><span>Total (USD)</span><b>$' + c.total + '</b></div>';
+    el('sum').innerHTML = h;
+  }
+  document.querySelectorAll('.stepper button').forEach(function(b){
+    b.addEventListener('click', function(){
+      var t = b.getAttribute('data-t'), v = st[t] + Number(b.getAttribute('data-d'));
+      var min = t === 'singers' ? 1 : st.singers, max = t === 'singers' ? 6 : 30;
+      st[t] = Math.min(max, Math.max(min, v)); render();
+    });
+  });
+  el('minus').addEventListener('change', render); el('rush').addEventListener('change', render);
+  render();
+
+  el('go').addEventListener('click', function(){
+    var c = calc(), box = el('formbox');
+    if (!TALLY_FORM_ID) {
+      box.innerHTML = '<div class="soon">The order form is almost ready. For now, please DM me on X: <a href="https://x.com/Nitona27_EN" target="_blank" rel="noopener">@Nitona27_EN</a>, with your total ($' + c.total + ').</div>';
+    } else {
+      var q = 'singers=' + st.singers + '&tracks=' + st.tracks + '&extra_singers=' + c.extraSingers + '&extra_tracks=' + c.extraTracks +
+              '&minus=' + c.minus + '&rush=' + c.rush + '&price=' + c.total;
+      box.innerHTML = '<iframe data-tally-src="https://tally.so/embed/' + TALLY_FORM_ID + '?alignLeft=1&hideTitle=1&dynamicHeight=1&' + q +
+        '" loading="lazy" width="100%" height="600" title="Order form"></iframe>';
+      var go = function(){ if (window.Tally) Tally.loadEmbeds(); else box.querySelector('iframe').src = box.querySelector('iframe').getAttribute('data-tally-src'); };
+      if (window.Tally) go(); else { var s = document.createElement('script'); s.src = 'https://tally.so/widgets/embed.js'; s.onload = go; s.onerror = go; document.body.appendChild(s); }
+    }
+    el('formwrap').classList.add('on');
+    el('formwrap').scrollIntoView({behavior: 'smooth'});
+  });
+</script>
+</body>
+</html>
